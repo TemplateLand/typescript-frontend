@@ -1,12 +1,12 @@
-const path = require('path')
-const { CleanWebpackPlugin } = require('clean-webpack-plugin')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
-const WebpackManifestPlugin = require('webpack-manifest-plugin')
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const TerserJSPlugin = require('terser-webpack-plugin')
-const OptimizeCSSAssetsWebpackPlugin = require('optimize-css-assets-webpack-plugin')
+const path = require('path');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const WebpackManifestPlugin = require('webpack-manifest-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const TerserJSPlugin = require('terser-webpack-plugin');
+const OptimizeCSSAssetsWebpackPlugin = require('optimize-css-assets-webpack-plugin');
 
-const devMode = process.env.NODE_ENV !== 'production'
+const devMode = process.env.NODE_ENV !== 'production';
 
 const styleLoader = {
   loader: MiniCssExtractPlugin.loader,
@@ -14,7 +14,7 @@ const styleLoader = {
     hmr: devMode,
     reloadAll: true,
   },
-}
+};
 
 module.exports = {
   entry: path.join(__dirname, 'src', 'index.ts'),
@@ -64,4 +64,4 @@ module.exports = {
       },
     },
   },
-}
+};
