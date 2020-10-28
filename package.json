@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "start": "webpack-dev-server --open --config webpack.dev.js",
+    "start": "webpack serve --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
     "format": "prettier --write ."
   },
@@ -9,22 +9,21 @@
     "@typescript-eslint/eslint-plugin": "^4.4.1",
     "@typescript-eslint/parser": "^4.3.0",
     "clean-webpack-plugin": "^3.0.0",
-    "css-loader": "^4.3.0",
+    "css-loader": "^5.0.0",
     "file-loader": "^6.1.0",
     "html-webpack-plugin": "^4.5.0",
-    "mini-css-extract-plugin": "^0.11.2",
+    "mini-css-extract-plugin": "^1.2.1",
     "optimize-css-assets-webpack-plugin": "^5.0.4",
     "prettier": "^2.1.2",
     "sass": "^1.27.0",
     "sass-loader": "^10.0.2",
     "style-loader": "^2.0.0",
-    "terser-webpack-plugin": "^4.2.2",
+    "terser-webpack-plugin": "^5.0.3",
     "ts-loader": "^8.0.4",
     "typescript": "^4.0.3",
-    "webpack": "^4.44.2",
-    "webpack-cli": "^3.3.11",
+    "webpack": "^5.3.0",
+    "webpack-cli": "^4.1.0",
     "webpack-dev-server": "^3.11.0",
-    "webpack-manifest-plugin": "^2.2.0",
     "webpack-merge": "^5.2.0"
   }
 }
